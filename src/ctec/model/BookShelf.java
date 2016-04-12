@@ -6,5 +6,4 @@ public interface BookShelf
 	public Double Rating();
 	public void Burn();
 	
-	
 }

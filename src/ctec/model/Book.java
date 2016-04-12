@@ -5,7 +5,7 @@ public class Book implements BookShelf
 	private String title;
 	private String author;
 	private int numberOfPages;
-	
+	private double rating;
 	
 	public String getTitle()
 	{
@@ -32,6 +32,14 @@ public class Book implements BookShelf
 		this.numberOfPages = numberOfPages;
 	}
 	
+	public double getRating()
+	{
+		return rating;
+	}
+	public void setRating(double rating)
+	{
+		this.rating = rating;
+	}
 	@Override
 	public String Read()
 	{
