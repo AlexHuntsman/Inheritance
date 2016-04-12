@@ -9,7 +9,7 @@ public class RangersApprentice extends Book
 	this.setTitle("The Ruins of Gorlan");
 	this.setAuthor("John Flanagan");
 	this.setNumberOfPages(282);
-	this.setRating()
+	this.setRating(4.0);
 	
 	}
 	
@@ -35,6 +35,8 @@ public class RangersApprentice extends Book
 		
 		return comparedValue;
 	}
+	
+	
 	
 	
 }

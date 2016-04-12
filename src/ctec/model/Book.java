@@ -6,6 +6,7 @@ public class Book implements BookShelf
 	private String author;
 	private int numberOfPages;
 	private double rating;
+	private String description;
 	
 	public String getTitle()
 	{

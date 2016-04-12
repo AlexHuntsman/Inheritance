@@ -5,6 +5,11 @@ import ctec.model.*;
 
 public class BookController
 {
+	public BookController()
+	{
+		//build all model components
+		makeBookList();
+	}
 	
 	private ArrayList<Book> bookList;
 	
@@ -23,6 +28,11 @@ public class BookController
 	{
 		bookList.add(new WayOfKings());
 		bookList.add(new RangersApprentice());
+	}
+	
+	public void start()
+	{
+		
 	}
 	
 	
