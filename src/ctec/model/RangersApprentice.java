@@ -13,29 +13,6 @@ public class RangersApprentice extends Book
 	
 	}
 	
-	public int compareTo(Object compared)
-	{
-		int comparedValue = -1;
-		
-		if(compared instanceof Book)
-		{
-			if(this.Rating() > ((Book) compared).Rating())
-			{
-				comparedValue = 1;
-			}
-			else if(this.Rating() < ((Book) compared).Rating())
-			{
-				comparedValue = -1;
-			}
-			else 
-			{
-				comparedValue = 0;
-			}
-		}
-		
-		return comparedValue;
-	}
-	
 	
 	
 	
