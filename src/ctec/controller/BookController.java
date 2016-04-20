@@ -2,14 +2,21 @@ package ctec.controller;
 
 import java.util.ArrayList;
 import ctec.model.*;
+import ctec.view.*;
 
 public class BookController
 {
+	private Book myBook;
+	private InheritanceView myPanel;
+	private InheritanceFrame myFrame;
+	
 	public BookController()
 	{
+		Book myBook = new Book();
+		InheritanceFrame myFrame = new InheritanceFrame(this);
 		this.bookList = new ArrayList<Book>();
-		//build all model components
 		makeBookList();
+		
 	}
 	
 	private ArrayList<Book> bookList;
