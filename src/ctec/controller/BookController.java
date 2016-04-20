@@ -7,12 +7,17 @@ public class BookController
 {
 	public BookController()
 	{
+		this.bookList = new ArrayList<Book>();
 		//build all model components
 		makeBookList();
 	}
 	
 	private ArrayList<Book> bookList;
 	
+	public ArrayList<Book> getBookList() {
+		return bookList;
+	}
+
 	public String showBookRating()
 	{
 		String bookRatings = "";
