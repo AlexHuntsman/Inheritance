@@ -2,13 +2,16 @@ package ctec.controller;
 
 import java.util.ArrayList;
 import ctec.model.*;
+import ctec.view.BookFrame;
 
 public class BookController
 {
+	private BookFrame baseFrame;
 	public BookController()
 	{
 		//build all model components
 		makeBookList();
+		baseFrame = new BookFrame(this);
 	}
 	
 	private ArrayList<Book> bookList;
