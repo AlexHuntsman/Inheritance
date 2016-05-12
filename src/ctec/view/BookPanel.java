@@ -39,7 +39,10 @@ public class BookPanel extends JPanel
 		{
 			public void actionPerformed(ActionEvent click)
 			{
-				
+				for (int index = 1; index < baseController.bookList.size(); index++)
+				{
+					
+				}
 			}
 		});
 		

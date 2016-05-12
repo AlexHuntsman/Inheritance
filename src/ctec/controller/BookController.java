@@ -7,19 +7,19 @@ import ctec.view.*;
 public class BookController
 {
 	private Book myBook;
-	private InheritanceView myPanel;
-	private InheritanceFrame myFrame;
-	
+	private BookPanel myPanel;
+	private BookFrame myFrame;
+	public ArrayList<Book> bookList;
 
 	public BookController()
 	{
 		Book myBook = new Book();
-		InheritanceFrame myFrame = new InheritanceFrame(this);
+		BookFrame myFrame = new BookFrame(this);
 		this.bookList = new ArrayList<Book>();
 		makeBookList();
     }
 	
-	private ArrayList<Book> bookList;
+
 	
 	public ArrayList<Book> getBookList() {
 		return bookList;
